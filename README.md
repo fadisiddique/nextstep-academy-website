@@ -12,6 +12,10 @@ https://nextstepacademyonline.netlify.app/
 - WhatsApp integration for instant inquiries
 - Mobile-friendly navigation menu
 - Scroll-based UI effects with reduced-motion support
+- 
+## 🎨 Design Process
+The website was first designed in Figma before development.
+Design files and exports are available in the `/design` folder.
 
 ## 🛠 Tech Stack
 - HTML5
