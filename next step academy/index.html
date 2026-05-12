@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" type="image/jpeg" href="assets/favicon.jpeg">
+        <title>NextStep Academy</title>
+    </head>
+    <body>
+        <header class="site-header">
+            
+            <nav class="navbar">
+                <div class="navbar-container">
+                    <a href="index.html"><img src="assets\nextStepAcademyLogo.jpeg" class="logo"/></a>
+                    <button class="nav-toggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    </button>
+
+                    <ul class="navtabs">
+                    <li><a href="index.html" class="nav-active">Home</a></li>
+                    <li><a href="course.html">Courses</a></li>
+                    <li><a href="becomeATutor.html">Become a Tutor</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            
+        </header>
+        <main>
+            <section class="hero-page">
+                <div class="container hero-container">
+                <div class="hero-text">
+                <h1>Empowering Education Through Technology</h1>
+                <p>Transform your future with expert-led courses. 
+                Join thousands of students mastering new skills
+                through interactive online learning</p>
+                
+                <button onclick="openDemo()" class="hero-btn">Book a free Demo now →</button>
+                </div>
+                <div class="hero-img">
+                    <img src="assets\BookdemoImg.png" alt="img of woman holding book" />
+
+                </div>
+                </div>
+            </section>
+            <section class="whyUs-page">
+                <div class="whyUs-text">
+                <h2>Why Choose <span class="highlight">NEXTSTEP?</span></h2>
+                <p>Everything you need to learn smarter, faster, and better.</p>
+                </div>
+                <div class="whyUs-features">
+                    <article class="whyUs-card">
+                        <img src="assets\liveclassicon.png" alt="" class="whyUs-icon"/>
+                        <h4>Live Classes right at you finger tips</h4>
+                        <p>Access live interactive sessions with verified faculties</p>
+                    </article>
+                    <article class="whyUs-card">
+                        <img src="assets\instructorsicon.png" alt="" class="whyUs-icon"/>
+                        <h4>Expert Instructors</h4>
+                        <p>Learn from industry professionals with years of real-world experience.</p>
+                    </article>
+                    <article class="whyUs-card">
+                        <img src="assets\scheduleicon.png" alt="" class="whyUs-icon"/>
+                        <h4>Flexible Schedule</h4>
+                        <p>Study at your own pace with 24/7 access to all course materials.</p>
+                    </article>
+                    <article class="whyUs-card">
+                        <img src="assets\resourceicon.png" alt="" class="whyUs-icon"/>
+                        <h4>Rich Resources</h4>
+                        <p>Get comprehensive study materials, assignments, and practical projects.</p>
+                    </article>
+                    <article class="whyUs-card">
+                        <img src="assets\supporticon.png" alt="" class="whyUs-icon"/>
+                        <h4>Support</h4>
+                        <p>provides remedial teaching support for students needing extra help.
+                            parenting and psychological support.</p>
+                    </article>
+                    <article class="whyUs-card">
+                        <img src="assets\certificateicon.png" alt="" class="whyUs-icon"/>
+                        <h4>Certificates</h4>
+                        <p>Earn certificates upon special skilled course completion to boost your academics.</p>
+                    </article>
+                    
+                </div>
+            </section>
+            <section class="program-page">
+                <h2>Our Programs</h2>
+                <h3>Explore our most in-demand programs</h3>
+                <div class="program-scroll">
+                <button class="scroll-arrow" aria-label="Scroll programs">
+                    ›
+                </button>
+                
+                <div class="program-cards">
+                    <article class="progcard">
+                        <div class="program-cardImg">
+                            <img src="assets\Course-acaemicTuition.png" alt="" class="academicTuitionCard">
+                        </div>
+                        <div>
+                            <h4>Academic Tuition</h4>
+                            <h5>Personalized 1:1 tuition class for every learner</h5>
+                            <ul class="program-cardAttributes">
+                                <li>
+                                    <img src="assets\clockicon.png" alt="" class="programAttributes-icon"/>
+                                    <h6>flexible</h6>
+                                    
+                                </li>
+                                <li>
+                                    <img src="assets\counticon.png" alt="" class="programAttributes-icon"/>
+                                    <h6>1000+</h6>
+                                    
+                                </li>
+                                <li>
+                                    <img src="assets\staricon.png" alt="" class="programAttributes-icon"/>
+                                    <h6>5.0</h6>
+                                    
+                                </li>
+                            </ul>
+                            <button class="enroll-btn" data-whatsapp data-course-name="Academic Tuition">
+                                Enroll now
+                            </button>
+
+                        </div>
+                    </article>
+                    <article class="progcard">
+                        <div class="program-cardImg">
+                            <img src="assets\Course-FoundationCourse.png" alt="" class="FoundationCourseCard">
+                        </div>
+                        <div>
+                            <h4>Foundation Course</h4>
+                            <h5>Vacation batches and individual classes </h5>
+                            <ul class="program-cardAttributes">
+                                <li>
+                                    <img src="assets\clockicon.png" alt="" class="programAttributes-icon"/>
+                                    <h6>1-2 months</h6>
+                                    
+                                </li>
+                                <li>
+                                    <img src="assets\counticon.png" alt="" class="programAttributes-icon"/>
+                                    <h6>1000+</h6>
+                                    
+                                </li>
+                                <li>
+                                    <img src="assets\staricon.png" alt="" class="programAttributes-icon"/>
+                                    <h6>5.0</h6>
+                                    
+                                </li>
+                            </ul>
+                            <button class="enroll-btn" data-whatsapp data-course-name="Foundation Course">
+                                Enroll now
+                            </button>
+
+                        </div>
+                    </article>
+                    <article class="progcard">
+                        <div class="program-cardImg">
+                            <img src="assets\Course-KGProgram.png" alt="" class="KGProgramCard">
+                        </div>
+                        <div>
+                            <h4>KG Program</h4>
+                            <h5>Personalized 1:1 and vacation batch classes </h5>
+                            <ul class="program-cardAttributes">
+                                <li>
+                                    <img src="assets\clockicon.png" alt="" class="programAttributes-icon"/>
+                                    <h6>10 months</h6>
+                                    
+                                </li>
+                                <li>
+                                    <img src="assets\counticon.png" alt="" class="programAttributes-icon"/>
+                                    <h6>--</h6>
+                                    
+                                </li>
+                                <li>
+                                    <img src="assets\staricon.png" alt="" class="programAttributes-icon"/>
+                                    <h6>--</h6>
+                                    
+                                </li>
+                            </ul>
+                            <button class="enroll-btn" data-whatsapp data-course-name="KG Program">
+                                Enroll now
+                            </button>
+
+                        </div>
+                    </article>
+                    <article class="progcard">
+                        <div class="program-cardImg">
+                            <img src="assets\Course-SpokenLanguage.png" alt="" class="SpokenLanguageCard"/>
+                        </div>
+                        <div>
+                            <h4>Spoken languages</h4>
+                            <h5>batches and personalized sessions</h5>
+                            <ul class="program-cardAttributes">
+                                <li>
+                                    <img src="assets\clockicon.png" alt="" class="programAttributes-icon"/>
+                                    <h6>1 months</h6>
+                                    
+                                </li>
+                                <li>
+                                    <img src="assets\counticon.png" alt="" class="programAttributes-icon"/>
+                                    <h6>500+</h6>
+                                    
+                                </li>
+                                <li>
+                                    <img src="assets\staricon.png" alt="" class="programAttributes-icon"/>
+                                    <h6>5.0</h6>
+                                    
+                                </li>
+                            </ul>
+                            <button class="enroll-btn" data-whatsapp data-course-name="Spoken Languages">
+                                Enroll now
+                            </button>
+
+                        </div>
+                    </article>
+
+                </div>
+                </div>
+                
+               <a href="course.html" > <button class="all-course-btn">View All Courses</button></a>
+
+            </section>
+            <section class="successStory-page">
+                <h2>Success Story</h2>
+                <h3>Every success story begins with a decision to learn</h3>
+                <div class="success-scroll">
+                <button class="scroll-arrow">›</button>
+                <div class="successStory-cards">
+                    <article class="successStory-card">
+                        <div class="testimonial-header">
+                        <img src="assets\commaicon.png" alt=""  class="quote-icon"/>
+                        <img src="assets\5starsicon.png" alt="" class="stars"/>
+                        </div>
+                        <p class="testimonial-text">I joined NextStep Academy Online to improve my cursive writing. 
+                            With regular practice and guidance, my handwriting improved,
+                             and I won First Prize in my school’s cursive writing competition.
+                        </p>
+                        <div class="testimonial-author">
+                        <img src="assets\reviewStudent1.png" alt=""/>
+                        
+                        <div class="author-info">
+                        <h4>Esther Ann Premji</h4>
+                        <p>
+                            Grace valley Indian School,
+                            Grade 1 
+                        </p>
+                        </div>
+                        </div>
+                    </article>
+                    <article class="successStory-card">
+                        <div class="testimonial-header">
+                        <img src="assets\commaicon.png" alt="" class="quote-icon"/>
+                        <img src="assets\5starsicon.png" alt="" class="stars"/>
+                        </div>
+                        <p class="testimonial-text">I used to find Mathematics difficult, but the clear explanations
+                             and step-by-step practice helped me understand concepts better.
+                             With constant support, my confidence grew and I eventually became 
+                             the top scorer in Mathematics.
+                        </p>
+                        <div class="testimonial-author">
+                        <img src="assets\reviewStudent2.png" alt=""/>
+                        <div class="author-info">
+                        <h4>Arunima Kedar Save </h4>
+                        <p>
+                            ADIS Al wathba, 
+                            Grade 4 
+                        </p>
+                        </div>
+                        </div>
+                    </article>
+                    <article class="successStory-card">
+                        <div class="testimonial-header">
+                        <img src="assets\commaicon.png" alt="" class="quote-icon"/>
+                        <img src="assets\5starsicon.png" alt="" class="stars"/>
+                        </div>
+                        <p class="testimonial-text">We are very happy with the classes at NextStep Academy Online. 
+                            Alwin is now confident, enjoys the sessions, and participates actively.
+                             We appreciate the teacher’s supportive approach.
+                        </p>
+                        <div class="testimonial-author">
+                        <img src="assets\reviewStudent3.png" alt=""/>
+                        <div class="author-info">
+                        <h4>Alwin</h4>
+                        <p>
+                            Private international English School,
+                            AbuDhabi,Grade 7
+                        </p>
+                        </div>
+                        </div>
+                    </article>
+                    
+
+                </div>
+                </div>
+            </section>
+            <section class="endcard-page">
+                <h2>Ready to Start Your Learning Journey?</h2>
+                <h3>Join thousands of students already learning with us. 
+                    Get access to all our courses and expert instructors today.</h3>
+                <div class="endcard-actions">
+                    <button class="btn-primary" data-whatsapp data-course-name="Available Courses">Get Started Now →</button>
+                    <button onclick="openDemo()" class="btn-outline">Schedule a Free Demo</button>
+                </div>
+            </section>
+        </main>
+        <footer class="main-footer">
+            <div class="footer-container">
+                <div class="footer-brand">
+                <h3>NextStep Academy</h3>
+                <p>Empowering education through technology</p>
+                <div class="footer-socials">  
+                <a href="https://www.facebook.com/share/187WJjCcgc/"><img src="assets\facebookdarkicon.png" alt="NextStepFB"/></a>
+                <a href="https://www.instagram.com/nextstepacademyonline?igsh=MXJxb3ZsZzNtcGZ3eg=="><img src="assets\instagramdarkicon.png" alt="NextStepIG"/></a>
+                <a href=""><img src="assets\linkedlndarkicon.png" alt="NextStepLinkedIn"/></a>
+                <a href="https://www.youtube.com/@NEXTSTEPACADEMYONLINE"><img src="assets\youtubedarkicon.png" alt="NextStepInstagram"/></a>
+                </div>
+                </div>
+            <div>
+                <nav class="footer-links">
+                <h4>
+                    Quick Links
+                </h4>
+                <ul>
+                    <li><a href="course.html">Courses</a></li>
+                    <li><a href="becomeATutor.html">Become a Tutor</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+                </nav>
+
+            </div>
+            <div>
+                <nav class="footer-support-links">
+                <h4>
+                    Support
+                </h4>
+                <ul>
+                    <li><a href="">Help Center</a></li>
+                    <li><a href="">FAQs</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Terms of Service</a></li>
+                </ul>
+                </nav>
+
+            </div>
+            <div class="footer-img">
+                <a href="index.html"><img src="assets\footerimg.svg"/></a>
+            </div>
+            </div>
+            <hr id="footerhr">
+            <p class="copyright">© 2025 NextStep Academy. All rights reserved.</p>
+
+        </footer>
+        <div class="demo-overlay" id="demoOverlay">
+        <div class="demo-modal">
+        <button class="demo-close" onclick="closeDemo()">✕</button>
+
+    <h2>Book a Free Live Demo Class</h2>
+    <p class="demo-subtext">Experience our teaching before enrolling</p>
+
+    <form class="demo-form" id="demoForm">
+  <label>
+    Name
+    <input type="text" id="demoName" placeholder="Student Name" required />
+  </label>
+
+  <label>
+    Class
+    <input type="text" id="demoClass" placeholder="Class / Grade" required />
+  </label>
+
+  <label>
+    Phone Number
+    <input type="tel" id="demoWhatsapp" placeholder="+91 XXXXXXXXXX" required />
+  </label>
+
+  <button type="submit" class="demo-btn">
+    Book →
+  </button>
+</form>
+    </div>
+    </div>
+    <script>
+      function openDemo() {
+        document.getElementById("demoOverlay").classList.add("active");
+        document.body.style.overflow = "hidden";
+      }
+
+      function closeDemo() {
+        document.getElementById("demoOverlay").classList.remove("active");
+        document.body.style.overflow = "";
+      }
+    </script>
+    <script src="js/connection.js"></script>
+
+
+
+    </body>
+</html>
