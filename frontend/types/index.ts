@@ -31,8 +31,11 @@ export type CourseCategory =
   | "spoken-language"
   | "cursive-writing"
   | "art-craft"
-  | "counselling"
-  | "all";
+  | "counselling";
+  
+export type CourseFilterCategory =
+  | "all"
+  | CourseCategory;
 
 export interface CurriculumSection {
   title: string;

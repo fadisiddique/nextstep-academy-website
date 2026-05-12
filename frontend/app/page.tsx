@@ -6,8 +6,9 @@ import { Search } from "lucide-react";
 import CourseCard, { CourseCardSkeleton } from "@/components/CourseCard";
 import { coursesApi } from "@/lib/api";
 import type { Course, CourseCategory } from "@/types";
+import type { CourseFilterCategory } from "@/types";
 
-const TABS: { label: string; value: CourseCategory }[] = [
+const TABS: { label: string; value: CourseFilterCategory }[] = [
   { label: "All Courses",      value: "all" },
   { label: "Foundation",       value: "foundation" },
   { label: "Language",         value: "language" },
@@ -18,7 +19,7 @@ const TABS: { label: string; value: CourseCategory }[] = [
 ];
 
 export default function CoursesPage() {
-  const [activeTab, setActiveTab]   = useState<CourseCategory>("all");
+  const [activeTab, setActiveTab]   = useState<CourseFilterCategory>("all");
   const [search, setSearch]         = useState("");
   const [courses, setCourses]       = useState<Course[]>([]);
   const [loading, setLoading]       = useState(true);
