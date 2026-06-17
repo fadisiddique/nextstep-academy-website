@@ -24,7 +24,7 @@ const CourseSchema = new mongoose.Schema({
   imagePublicId:    { type: String, required: true },       // Cloudinary public_id
   category: {
     type: String,
-    enum: ["foundation", "language", "spoken-language", "cursive-writing", "art-craft", "counselling"],
+    enum: ["foundation", "language", "spoken-language", "cursive-writing", "art-craft", "counselling","one-to-one"],
     required: true,
   },
   duration:     { type: String, required: true, default: "Flexible" },

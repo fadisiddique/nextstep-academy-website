@@ -31,7 +31,8 @@ export type CourseCategory =
   | "spoken-language"
   | "cursive-writing"
   | "art-craft"
-  | "counselling";
+  | "counselling"
+  | "one-to-one";
   
 export type CourseFilterCategory =
   | "all"

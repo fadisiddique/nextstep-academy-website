@@ -16,6 +16,7 @@ const TABS: { label: string; value: CourseFilterCategory }[] = [
   { label: "Cursive Writing",  value: "cursive-writing" },
   { label: "Art & Craft",      value: "art-craft" },
   { label: "Counselling",      value: "counselling" },
+  { label: "One-to-One",      value: "one-to-one" }
 ];
 
 export default function CoursesPage() {

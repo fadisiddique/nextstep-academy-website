@@ -12,7 +12,7 @@ const schema = z.object({
   title:            z.string().min(3, "Required"),
   shortDescription: z.string().min(10).max(280),
   fullDescription:  z.string().min(20, "Required"),
-  category: z.enum(["foundation","language","spoken-language","cursive-writing","art-craft","counselling"]),
+  category: z.enum(["foundation","language","spoken-language","cursive-writing","art-craft","counselling","one-to-one"]),
   duration:         z.string().min(1, "Required"),
   rating:           z.coerce.number().min(1).max(5),
   studentCount:     z.coerce.number().min(0),
@@ -126,6 +126,7 @@ export default function CourseForm({ course, onSubmit }: Props) {
               <option value="cursive-writing">Cursive Writing</option>
               <option value="art-craft">Art & Craft</option>
               <option value="counselling">Counselling</option>
+              <option value="counselling">One-to-One</option>
             </select>
           </F>
 
