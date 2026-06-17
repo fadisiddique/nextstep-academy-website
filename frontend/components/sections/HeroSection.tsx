@@ -151,7 +151,7 @@ export default function HeroSection() {
                     <div className="w-12 h-12 rounded-full bg-maroon-800 flex items-center justify-center
                                     font-outfit font-bold text-white text-lg">A</div>
                     <div>
-                      <p className="font-outfit font-semibold text-charcoal-900">Live Session</p>
+                      <p className="font-outfit font-semibold text-charcoal-900">Live One-to-One Sessions</p>
                       <div className="flex items-center gap-1.5">
                         <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
                         <span className="text-small text-emerald-600 font-medium">In Progress</span>
