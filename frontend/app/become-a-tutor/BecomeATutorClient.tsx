@@ -9,6 +9,7 @@ import { z } from "zod";
 import { tutorApi } from "@/lib/api";
 import toast from "react-hot-toast";
 import type { TutorApplicationData } from "@/types";
+import Image from "next/image";
 
 const schema = z.object({
   name:          z.string().min(2, "Name is required"),
@@ -129,38 +130,21 @@ export default function BecomeATutorPage() {
                 ))}
               </div>
             </motion.div>
-
-            {/* Right — decorative visual */}
+            {/* Right — Hero Image */}
             <motion.div
               initial={{ opacity: 0, x: 32 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.7, delay: 0.2 }}
               className="hidden lg:flex justify-center"
             >
-              <div className="relative animate-float">
-                <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8 max-w-xs">
-                  <div className="w-16 h-16 rounded-full bg-gold-500/20 border-2 border-gold-400
-                                  flex items-center justify-center mb-5 mx-auto">
-                    <span className="font-outfit font-bold text-gold-400 text-2xl">T</span>
-                  </div>
-                  <p className="font-outfit font-bold text-white text-center text-h4 mb-1">
-                    Mr. Arjun Kumar
-                  </p>
-                  <p className="text-small text-cream-200/60 text-center mb-5">English & Grammar</p>
-                  <div className="space-y-2.5">
-                    {["5+ Years Teaching", "200+ Students Taught", "4.9★ Average Rating"].map((item) => (
-                      <div key={item} className="flex items-center gap-2 text-small text-cream-200/80">
-                        <CheckCircle size={13} className="text-gold-400 shrink-0" />
-                        {item}
-                      </div>
-                    ))}
-                  </div>
-                  <div className="mt-5 pt-4 border-t border-white/10 text-center">
-                    <p className="text-small text-cream-200/60">Monthly Earnings</p>
-                    <p className="font-outfit font-bold text-gold-400 text-h3">AED 3,500+</p>
-                  </div>
-                </div>
-              </div>
+              <Image
+                src="/become-tutor.png"
+                alt="Become a Tutor"
+                width={500}
+                height={600}
+                className="rounded-3xl shadow-2xl object-cover border border-white/10"
+                priority
+              />
             </motion.div>
           </div>
         </div>

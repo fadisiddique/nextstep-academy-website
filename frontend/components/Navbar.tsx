@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ChevronDown, GraduationCap } from "lucide-react";
+import Image from "next/image";
 
 const COURSE_CATEGORIES = [
   { label: "Foundation Course",     href: "/courses/foundation-course" },
@@ -73,15 +74,15 @@ export default function Navbar() {
           <div className="flex items-center justify-between h-16 md:h-20">
 
             {/* Logo */}
-            <Link href="/" className="flex items-center gap-2.5 shrink-0">
-              <div className="w-9 h-9 bg-maroon-800 rounded-lg flex items-center justify-center">
-                <GraduationCap size={20} className="text-white" />
-              </div>
-              <span className={`font-outfit font-bold text-lg leading-tight transition-colors duration-300 ${scrolled ? "text-charcoal-900" : "text-white"
-}`}>
-                NextStep<br />
-                <span className={`text-sm font-semibold tracking-wide ${ scrolled ? "text-maroon-800" : "text-white/80"}`}>Academy</span>
-              </span>
+            <Link href="/" className="shrink-0">
+              <Image
+                src="/nextStepAcademyLogo.jpeg"
+                alt="NextStep Academy"
+                width={220}
+                height={70}
+                className="h-12 md:h-14 w-auto object-contain"
+                priority
+              />
             </Link>
 
             {/* Desktop nav */}
