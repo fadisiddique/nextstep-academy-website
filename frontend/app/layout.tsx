@@ -62,15 +62,36 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return (
-    <html lang="en" className={`${outfit.variable} ${inter.variable}`}>
-      <body className="bg-cream-50 text-charcoal-900 antialiased">
-  <Toaster ... />
+return (
+  <html lang="en" className={`${outfit.variable} ${inter.variable}`}>
+    <body className="bg-cream-50 text-charcoal-900 antialiased">
+      <Toaster
+        position="top-right"
+        toastOptions={{
+          style: {
+            fontFamily: "var(--font-inter)",
+            borderRadius: "12px",
+            border: "1px solid #EDE4D8",
+            boxShadow: "0 4px 16px rgba(0,0,0,0.08)",
+          },
+          success: {
+            iconTheme: {
+              primary: "#6B1A2A",
+              secondary: "#FAF7F2",
+            },
+          },
+        }}
+      />
 
-  <main className="min-h-screen">
-    {children}
-  </main>
-</body>
-    </html>
-  );
+      <Navbar />
+
+      <main className="min-h-screen">
+        {children}
+      </main>
+
+      <Footer />
+    </body>
+  </html>
+);
+
 }
