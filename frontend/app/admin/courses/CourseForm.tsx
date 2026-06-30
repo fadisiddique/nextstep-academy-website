@@ -126,7 +126,7 @@ export default function CourseForm({ course, onSubmit }: Props) {
               <option value="cursive-writing">Cursive Writing</option>
               <option value="art-craft">Art & Craft</option>
               <option value="counselling">Counselling</option>
-              <option value="counselling">One-to-One</option>
+              <option value="One-to-One">One-to-One</option>
             </select>
           </F>
 
